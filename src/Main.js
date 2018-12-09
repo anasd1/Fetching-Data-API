@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
     Route,
     NavLink,
-    HashRouter
+    BrowserRouter
 } from "react-router-dom";
 import Home from "./Home";
 import Australia from "./Australia";
@@ -12,7 +12,7 @@ import About from "./About";
 class Main extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div>
                     <h1 className="title">Fetching Data API</h1>
                     <ul className="header">
@@ -28,7 +28,7 @@ class Main extends Component {
                         <Route exact path="/about" component={About}/>
                     </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
